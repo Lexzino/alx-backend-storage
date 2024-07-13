@@ -1,4 +1,5 @@
 -- To validation to send an email
+DELIMITER //
 DROP TRIGGER IF EXISTS validate_email;
 CREATE TRIGGER validate_email
 BEFORE UPDATE ON users
@@ -9,5 +10,5 @@ BEGIN
     ELSE
         SET NEW.valid_email = NEW.valid_email;
     END IF;
-END $$
+END //
 DELIMITER ;
