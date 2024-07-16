@@ -1,1 +1,2 @@
-0-list_databases
+// Lists all databases.
+show dbs;

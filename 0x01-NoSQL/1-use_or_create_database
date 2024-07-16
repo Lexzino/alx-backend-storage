@@ -1,1 +1,2 @@
-1-use_or_create_database
+//script that creates or uses the database
+use my_db;

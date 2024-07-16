@@ -1,1 +1,2 @@
-2-insert
+//Script that insert document
+db.school.insert({name: "Holberton school",})
