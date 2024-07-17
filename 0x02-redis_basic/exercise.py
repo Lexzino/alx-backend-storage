@@ -57,7 +57,8 @@ class Cache:
     """Represents an object for storing data in a Redis data storage"""
 
     def __init__(self):
-        """Initialize the Cache with a Redis connection and clear the database"""
+        """Initialize the Cache with a Redis connection
+        and clear the database"""
         self._redis = redis.Redis()
         self._redis.flushdb()
 
