@@ -37,7 +37,7 @@ def call_history(method: Callable) -> Callable:
 
 
 def replay(method: Callable) -> None:
-    """Displays the call history of a Cache class' method"""
+    """Displays the call history of a Cache class method"""
     input_key = "{}:inputs".format(method.__qualname__)
     output_key = "{}:outputs".format(method.__qualname__)
 
